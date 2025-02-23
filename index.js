@@ -114,7 +114,7 @@ const bstTree = new BSTree();
 
 for (let i = 1; i <= 500; i++) {
   bstTree.insertNode(i);
-  console.log(i);
+  // console.log(i);
 }
 
 // bstTree.insertNode(12);
@@ -122,11 +122,15 @@ for (let i = 1; i <= 500; i++) {
 // bstTree.insertNode(10);
 // bstTree.insertNode(15);
 
-console.log(bstTree.searchValue(400));
-console.log(bstTree.searchValue(500));
+
 
 // bstTree.updateValue(10, 18);
-// bstTree.deleteNode(15);
+for (let i = 100; i <= 400; i++) {
+  bstTree.deleteNode(i);
+  console.log(i);
+}
 
+console.log(bstTree.searchValue(300));
+console.log(bstTree.searchValue(450));
 // console.log(JSON.stringify(bstTree, null, 2));
 console.log(bstTree);
