@@ -111,17 +111,22 @@ class BSTree {
 }
 
 const bstTree = new BSTree();
-bstTree.insertNode(30);
-bstTree.insertNode(12);
-bstTree.insertNode(40);
-bstTree.insertNode(10);
-bstTree.insertNode(15);
 
-console.log(bstTree.searchValue(12));
-console.log(bstTree.searchValue(3));
+for (let i = 1; i <= 500; i++) {
+  bstTree.insertNode(i);
+  console.log(i);
+}
 
-bstTree.updateValue(10, 18);
-bstTree.deleteNode(15);
+// bstTree.insertNode(12);
+// bstTree.insertNode(40);
+// bstTree.insertNode(10);
+// bstTree.insertNode(15);
 
-console.log(JSON.stringify(bstTree, null, 2));
-// console.log(bstTree);
+console.log(bstTree.searchValue(400));
+console.log(bstTree.searchValue(500));
+
+// bstTree.updateValue(10, 18);
+// bstTree.deleteNode(15);
+
+// console.log(JSON.stringify(bstTree, null, 2));
+console.log(bstTree);
